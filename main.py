@@ -7,11 +7,6 @@ from crewai import Crew, Process
 from agents import financial_analyst
 from task import analyze_financial_document
 
-# DATABASE IMPORTS
-from sqlalchemy import create_engine, Column, Integer, String, Text, DateTime
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker
-
 # ================= DATABASE SETUP ================= #
 
 DATABASE_URL = "sqlite:///./financial.db"
